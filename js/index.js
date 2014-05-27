@@ -1,16 +1,14 @@
 $(function(){
 
     // Appends the navbar to the top when scrolled past
-    original = $('nav').offset().top
     $(window).scroll(function(){
-        var scrollbar = $(document).scrollTop(),
-            nav = $('nav').offset().top;
+        var scroll = $(document).scrollTop()
 
-        if (scrollbar >= nav) {
+        if (scroll >= 25) {
             $('nav').addClass('fixed');
             $('.nav-container').addClass('show');
         }
-        if (scrollbar <= original) {
+        else {
             $('nav').removeClass('fixed');
             $('.nav-container').removeClass('show');
         }

@@ -1,5 +1,4 @@
 header {
-    border-top: 5px solid #00466b;
     height: 100%;
 }
 
@@ -83,17 +82,15 @@ header ul a:hover {
 
 nav {
     height: 105px;
-    border-top: 5px solid #00466b;
-    position: absolute;
-    bottom: -100px;
     width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    border-top: 5px solid #00466b;
     background-color: #fff;
 }
 
 nav.fixed {
-    position: fixed;
-    bottom: inherit;
-    top: 0px;
     border-bottom: 1px solid #ddd;
 }
 
@@ -167,6 +164,5 @@ section h1 {
 }
 
 #about {
-    padding-top: 105px;
     height: 2000px;
 }
