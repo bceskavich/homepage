@@ -1,10 +1,14 @@
 header {
     height: 100%;
+    border-top: 5px solid #00466b;
+    border-bottom: 5px solid #00466b;
 }
 
 header .intro {
     margin: 0px auto;
     width: 500px;
+    position: relative;
+    top: 12.5%;
 }
 
 header h1 {
@@ -12,7 +16,6 @@ header h1 {
     font-family: "Bitter";
     font-size: 68px;
     text-align: center;
-    margin-top: 25%;
     margin-bottom: 0px;
 }
 
@@ -157,12 +160,4 @@ nav .nav-links #initials span {
     header ul {
         font-size: 45px;
     }
-}
-
-section h1 {
-    font-family: "Bitter";
-}
-
-#about {
-    height: 2000px;
 }
