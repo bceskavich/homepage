@@ -170,6 +170,10 @@ section h1 {
     display: inline;
 }
 
-#about {
+section .title {
+    padding: 40px 0px;
+}
+
+.extra {
     height: 2000px;
 }
