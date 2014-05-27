@@ -1,6 +1,6 @@
 $(function(){
 
-    // Appends the navbar to the top when scrolled past
+    // Makes the navbar visible when the user begins scrolling past the landing
     $(window).scroll(function(){
         var scroll = $(document).scrollTop()
 
