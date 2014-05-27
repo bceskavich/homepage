@@ -1,0 +1,172 @@
+header {
+    border-top: 5px solid #00466b;
+    height: 100%;
+}
+
+header .intro {
+    margin: 0px auto;
+    width: 500px;
+}
+
+header h1 {
+    font-weight: 700;
+    font-family: "Bitter";
+    font-size: 68px;
+    text-align: center;
+    margin-top: 25%;
+    margin-bottom: 0px;
+}
+
+header #name {
+    color: #006aab;
+}
+
+header p {
+    font-weight: 300;
+    font-size: 19px;
+    text-align: center;
+    padding: 25px 15px;
+    border-top: 2px solid #00466b;
+    border-bottom: 2px solid #00466b;
+    margin: 75px 0px;
+}
+
+header p a {
+    font-weight: 700;
+}
+
+header p a:hover {
+    text-decoration: underline;
+    color: #006aab;
+}
+
+header .list-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+header ul {
+    font-size: 75px;
+    list-style: none;
+    position: relative;
+    float: left;
+    left: 50%;
+    display: block;
+    margin-left: 0px;
+}
+
+header ul li {
+    position: relative;
+    float: left;
+    display: block;
+    right: 50%;
+    padding: 0px 20px;
+}
+
+header ul a {
+    color: #333;
+    transition: .08s;
+    -webkit-transition: .08s;
+    -moz-transition: .08s;
+    -ms-transition: .08s;
+    -o-transition: .08s;
+}
+
+header ul a:hover {
+    color: #006aab;
+    transition: .08s;
+    -webkit-transition: .08s;
+    -moz-transition: .08s;
+    -ms-transition: .08s;
+    -o-transition: .08s;
+}
+
+nav {
+    height: 105px;
+    border-top: 5px solid #00466b;
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    background-color: #fff;
+}
+
+nav.fixed {
+    position: fixed;
+    bottom: inherit;
+    top: 0px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav .nav-container {
+    max-width: 1000px;
+    margin: 0px auto;
+    opacity: 0;
+}
+
+nav .nav-container.show {
+    opacity: 1;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+
+nav .nav-links {
+    font-size: 25px;
+    font-family: "Lato";
+    font-weight: 400;
+    line-height: 100px;
+}
+
+nav .nav-links li {
+    padding: 0px 40px;
+}
+
+nav .nav-links li:not(#initials) {
+    font-family: "Josefin Sans";
+    font-weight: 600;
+}
+
+nav .nav-links #initials {
+    font-family: "Josefin Slab";
+    font-size: 40px;
+    font-weight: 700;
+}
+
+nav .nav-links #initials span {
+    color: #006aab;
+}
+
+@media only screen and (max-width: 499px) {
+    header {
+        border-bottom: none;
+    }
+
+    header .intro {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 40px;
+        margin-top: 10%;
+    }
+
+    header p {
+        font-size: 15px;
+        margin: 50px 0px;
+    }
+
+    header ul {
+        font-size: 45px;
+    }
+}
+
+section h1 {
+    font-family: "Bitter";
+}
+
+#about {
+    padding-top: 105px;
+    height: 2000px;
+}
