@@ -220,8 +220,8 @@ section h4 {
     shape-rendering: crispEdges;
 }
 
-#skills .x-axis text {
-    fill: #fff;
+#skills text {
+    fill: #fff  ;
     font: 12px "Lato";
 }
 
