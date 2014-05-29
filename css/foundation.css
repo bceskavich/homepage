@@ -1252,9 +1252,10 @@ td {
 a {
   color: #006aab;
   text-decoration: none;
-  line-height: inherit; }
+  line-height: inherit;
+  font-weight: bold; }
   a:hover, a:focus {
-    color: #005b93; }
+    text-decoration: underline; }
   a img {
     border: none; }
 
@@ -1276,7 +1277,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Muli", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #333333;
