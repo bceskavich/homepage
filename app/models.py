@@ -26,4 +26,5 @@ class Work(db.Model):
     title = db.Column(db.String(256), index = True)
     description = db.Column(db.Text)
     url = db.Column(db.String(256))
+    imagename = db.Column(db.String(256))
 
