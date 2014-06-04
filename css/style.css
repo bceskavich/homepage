@@ -138,6 +138,12 @@ nav .nav-links #initials span {
     color: #006aab;
 }
 
+@media only screen and (max-height: 700px) {
+    header {
+        border-bottom: none;
+    }
+}
+
 @media only screen and (max-width: 499px) {
     header {
         border-bottom: none;
