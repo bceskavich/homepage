@@ -1,3 +1,7 @@
+/* -----------------
+Welcome Landing
+----------------- */
+
 header {
     height: 100%;
     border-top: 5px solid #00466b;
@@ -83,61 +87,6 @@ header ul a:hover {
     -o-transition: .08s;
 }
 
-nav {
-    height: 105px;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0px;
-    border-top: 5px solid #00466b;
-    background-color: #fff;
-}
-
-nav.fixed {
-    border-bottom: 1px solid #ddd;
-}
-
-nav .nav-container {
-    max-width: 1000px;
-    margin: 0px auto;
-    opacity: 0;
-}
-
-nav .nav-container.show {
-    opacity: 1;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
-    -ms-transition: .2s;
-    -o-transition: .2s;
-    transition: .2s;
-}
-
-nav .nav-links {
-    font-size: 25px;
-    font-family: "Lato";
-    font-weight: 400;
-    line-height: 100px;
-}
-
-nav .nav-links li {
-    padding: 0px 40px;
-}
-
-nav .nav-links li:not(#initials) {
-    font-family: "Josefin Sans";
-    font-weight: 600;
-}
-
-nav .nav-links #initials {
-    font-family: "Josefin Slab";
-    font-size: 40px;
-    font-weight: 700;
-}
-
-nav .nav-links #initials span {
-    color: #006aab;
-}
-
 @media only screen and (max-height: 700px) {
     header {
         border-bottom: none;
@@ -167,3 +116,7 @@ nav .nav-links #initials span {
         font-size: 45px;
     }
 }
+
+/* -----------------
+HCI Bio
+----------------- */
