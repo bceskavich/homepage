@@ -134,7 +134,8 @@ HCI Bio
     font-weight: bold;
 }
 
-#bio-container a:hover {
+.title a:hover,
+.intro a:hover {
     text-decoration: underline;
     color: #006aab;
 }
@@ -161,4 +162,13 @@ HCI Bio
 
 .intro p {
     font-size: 20px;
+}
+
+.deets .accordion h4 {
+    font-size: 20px;
+}
+
+.deets .accordion ul {
+    padding-left: 25px;
+    font-weight: 300;
 }

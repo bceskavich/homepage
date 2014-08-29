@@ -1097,6 +1097,10 @@ select {
     .inline-list > li > * {
       display: block; }
 
+/* -----------------
+Accordion
+----------------- */
+
 .accordion {
   margin-bottom: 0; }
   .accordion:before, .accordion:after {
@@ -1108,22 +1112,27 @@ select {
     display: block;
     margin-bottom: 0 !important; }
     .accordion .accordion-navigation.active > a, .accordion dd.active > a {
-      background: #e8e8e8; }
+      border-bottom: 2px dotted #00466b; }
     .accordion .accordion-navigation > a, .accordion dd > a {
-      background: #efefef;
-      color: #222222;
+      color: #333333;
       padding: 1rem;
       display: block;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-      font-size: 1rem; }
+      font-family: "Bitter", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      font-size: 25px;
+      border-top: 2px solid #00466b; }
       .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
-        background: #e3e3e3; }
+        background: #00466b;
+        color: #fff; }
     .accordion .accordion-navigation > .content, .accordion dd > .content {
       display: none;
       padding: 0.9375em; }
       .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
         display: block;
         background: white; }
+
+/* -----------------
+END Accordion
+----------------- */
 
 .text-left {
   text-align: left !important; }
