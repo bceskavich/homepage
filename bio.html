@@ -27,28 +27,40 @@
   </head>
   <body>
 
-    <header>
-      <div class="intro">
-        <h1>Hey, it's <span id="name">Billy!</span></h1>
+    <div id="bio-container">
+      <section class="title">
+        <h1>Billy Ceskavich</h1>
+        <h3>Engagement Fellow at <a href="http://www.syr.edu/" target="_blank">Syracuse University</a>. Connector at <a href="http://www.idea.syr.edu/" target="_blank">IDEA</a>. All around enthusiastic guy.</h3>
+      </section>
 
-        <p>billy <strong>[at]</strong> ceskavich.com<br />
-        <br />
-        Engagement Fellow at the <a href="http://ischool.syr.edu/" target="_blank">Syracuse University iSchool</a>. Mover and shaker at <a href="http://idea.syr.edu/" target="_blank">IDEA Syracuse</a> & <a href="http://www.hackupstate.com/" target="_blank">Hack Upstate</a>. Former product intern at <a href="https://twitter.com/about/" target="_blank">Twitter</a> & <a href="https://www.evernote.com" target="_blank">Evernote</a>. Sock enthusiast.</p>
+      <section class="intro">
+        <p>Hey there, I’m <strong>Billy</strong>. I’m a first year Engagement Fellow at Syracuse University, pursuing my Masters in Information Management in the iSchool. On campus I work with IDEA, building out the Syracuse tech community, and the NEXIS Lab, developing data visualizations. I’m passionate about consumer technology, startups of all sizes, and product management. Oh, and in a past life, I almost became a slave to the entertainment industry!</p>
 
-        <div class="list-container">
-          <ul>
-            <li><a class="ion-social-github" href="https://github.com/bceskavich/"></a></li>
-            <li><a class="ion-social-linkedin" href="https://www.linkedin.com/in/ceskavich"></a></li>
-            <li><a class="ion-social-twitter" href="https://twitter.com/ceskavich"></a></li>
-            <li><a class="ion-camera" href="https://instagram.com/ceskavich"></a></li>
-          </ul>
-        </div>
-      </div>
-    </header>
+        <p>Check out below for some more information on my past work and where I see myself heading next!</p>
+      </section>
+
+      <section class="deets">
+        <dl class="accordion" data-accordion>
+          <dd class="accordion-navigation">
+            <a href="#panel1"><i class="ion-university"></i>Education</a>
+            <div id="panel1" class="content">
+              Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </dd>
+          <dd class="accordion-navigation">
+            <a href="#panel2">Work Experience</a>
+            <div id="panel2" class="content">
+              Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </dd>
+        </dl>
+      </section>
+    </div>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/foundation/foundation.accordion.js"></script>
     <script>
       $(document).foundation();
     </script>

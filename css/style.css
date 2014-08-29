@@ -120,3 +120,45 @@ header ul a:hover {
 /* -----------------
 HCI Bio
 ----------------- */
+
+#bio-container {
+    max-width: 1000px;
+    padding: 0px 25px;
+    margin: 0px auto;
+    /*border: 1px solid black;*/
+    top: 12.5%;
+    position: relative;
+}
+
+#bio-container a {
+    font-weight: bold;
+}
+
+#bio-container a:hover {
+    text-decoration: underline;
+    color: #006aab;
+}
+
+#bio-container p {
+    font-weight: 300;
+}
+
+.title h1 {
+    font-family: "Bitter";
+    font-weight: 700;
+    font-size: 68px;
+}
+
+.title h3 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.intro {
+    padding: 50px 0px;
+}
+
+.intro p {
+    font-size: 20px;
+}
