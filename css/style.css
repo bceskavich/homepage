@@ -224,7 +224,7 @@ HCI Bio
     -o-transition: .08s;
 }
 
-.deets #panel4 ul a:hover {
+.deets #panel5 ul a:hover {
     color: #006aab;
     transition: .08s;
     -webkit-transition: .08s;
