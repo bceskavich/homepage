@@ -192,12 +192,12 @@ HCI Bio
     font-weight: 300;
 }
 
-.deets #panel4 .list-container {
+.deets #panel5 .list-container {
     width: 100%;
     overflow: hidden;
 }
 
-.deets #panel4 ul {
+.deets #panel5 ul {
     font-size: 75px;
     list-style: none;
     position: relative;
@@ -207,7 +207,7 @@ HCI Bio
     margin-left: 0px;
 }
 
-.deets #panel4 ul li {
+.deets #panel5 ul li {
     position: relative;
     float: left;
     display: block;
@@ -215,7 +215,7 @@ HCI Bio
     padding: 0px 20px;
 }
 
-.deets #panel4 ul a {
+.deets #panel5 ul a {
     color: #333;
     transition: .08s;
     -webkit-transition: .08s;
