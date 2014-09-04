@@ -135,31 +135,44 @@ body {
 }
 
 @media only screen and (max-height: 700px) {
-    header {
+    body {
         border-bottom: none;
     }
 }
 
 @media only screen and (max-width: 499px) {
-    header {
+    body {
         border-bottom: none;
     }
 
-    header .intro {
+    .container-home {
         width: 100%;
+        top: 6%;
     }
 
-    header h1 {
+    .container-home h1 {
         font-size: 40px;
         margin-top: 10%;
     }
 
-    header p {
-        font-size: 15px;
-        margin: 50px 0px;
+    .container-home #email {
+        font-size: 20px;
     }
 
-    header ul {
+    .home-body {
+        margin-bottom: 50px;
+    }
+
+    .home-body nav a {
+        font-size: 17.5px;
+    }
+
+    .container-home p {
+        font-size: 15px;
+        margin: 25px 0px;
+    }
+
+    .list-container ul {
         font-size: 45px;
     }
 }
