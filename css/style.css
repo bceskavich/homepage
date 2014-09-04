@@ -2,56 +2,63 @@
 Welcome Landing
 ----------------- */
 
-header {
-    height: 100%;
+body {
     border-top: 5px solid #00466b;
     border-bottom: 5px solid #00466b;
 }
 
-header .intro {
+.container-home {
     margin: 0px auto;
     width: 500px;
     position: relative;
     top: 12.5%;
 }
 
-header h1 {
+.container-home h1 {
     font-weight: 700;
     font-family: "Bitter";
-    font-size: 68px;
+    font-size: 60px;
     text-align: center;
     margin-bottom: 0px;
 }
 
-header #name {
-    color: #006aab;
+#nav {
+    text-align: center;
+    margin-top: 40px;
 }
 
-header p {
+#nav a {
+    font-weight: 400;
+    font-family: "Bitter";
+    font-size: 25px;
+}
+
+.container-home p {
     font-weight: 300;
     font-size: 19px;
     text-align: center;
     padding: 25px 15px;
     border-top: 2px solid #00466b;
     border-bottom: 2px solid #00466b;
-    margin: 75px 0px;
+    margin: 40px 0px 80px 0px;
 }
 
-header p a {
+.container-home p a {
     font-weight: 700;
 }
 
-header p a:hover {
+.container-home p a:hover,
+#nav a:hover {
     text-decoration: underline;
     color: #006aab;
 }
 
-header .list-container {
+.container-home .list-container {
     width: 100%;
     overflow: hidden;
 }
 
-header ul {
+.list-container ul {
     font-size: 75px;
     list-style: none;
     position: relative;
@@ -61,7 +68,7 @@ header ul {
     margin-left: 0px;
 }
 
-header ul li {
+.list-container ul li {
     position: relative;
     float: left;
     display: block;
@@ -69,7 +76,7 @@ header ul li {
     padding: 0px 20px;
 }
 
-header ul a {
+.list-container ul a {
     color: #333;
     transition: .08s;
     -webkit-transition: .08s;
@@ -78,7 +85,7 @@ header ul a {
     -o-transition: .08s;
 }
 
-header ul a:hover {
+.list-container ul a:hover {
     color: #006aab;
     transition: .08s;
     -webkit-transition: .08s;
