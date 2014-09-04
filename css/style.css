@@ -1,5 +1,5 @@
 /* -----------------
-Welcome Landing
+Homepage
 ----------------- */
 
 body {
@@ -22,25 +22,22 @@ body {
     margin-bottom: 0px;
 }
 
-#nav {
+.container-home #email {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 35px;
+    font-size: 27.5px;
+    font-style: italic;
+    font-weight: 300;
 }
 
-#nav a {
-    font-weight: 400;
-    font-family: "Bitter";
-    font-size: 25px;
-}
-
-.container-home .home-body  p{
+.container-home .home-body p{
     font-weight: 300;
     font-size: 19px;
     text-align: center;
     padding: 25px 15px;
     border-top: 2px solid #00466b;
     border-bottom: 2px solid #00466b;
-    margin: 40px 0px 80px 0px;
+    margin: 35px 0px 70px 0px;
 }
 
 .container-home .home-body p a {
