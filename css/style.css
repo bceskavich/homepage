@@ -1,10 +1,21 @@
 /* -----------------
+General
+----------------- */
+
+.container {
+    max-width: 980px;
+    padding: 0px 25px;
+    margin: 0px auto;
+    top: 6%;
+    position: relative;
+}
+
+/* -----------------
 Homepage
 ----------------- */
 
 body {
     border-top: 5px solid #00466b;
-    border-bottom: 5px solid #00466b;
 }
 
 .container-home {
@@ -134,17 +145,7 @@ body {
     -o-transition: .08s;
 }
 
-@media only screen and (max-height: 700px) {
-    body {
-        border-bottom: none;
-    }
-}
-
 @media only screen and (max-width: 499px) {
-    body {
-        border-bottom: none;
-    }
-
     .container-home {
         width: 100%;
         top: 6%;
@@ -178,14 +179,54 @@ body {
 }
 
 /* -----------------
-HCI Bio
+Portfolio Page
+----------------- */
+
+#back {
+    font-size: 40px;
+    color: #333;
+    display: block;
+    margin: 20px 45px;
+    position: fixed;
+}
+
+#back:hover {
+    color: #006aab;
+}
+
+#work article {
+    margin-bottom: 50px;
+}
+
+#work h1 {
+    font-family: "Bitter";
+    border-bottom: 2px solid #00466b;
+}
+
+#work img {
+    max-width: 800px;
+    margin: 50px auto;
+    border: 1px solid #333;
+    border-radius: 3px;
+    display: block;
+    box-shadow: 0px 0px 5px 1px #aaa;
+}
+
+#work p {
+    max-width: 800px;
+    margin: 0px auto;
+    font-weight: 300;
+    font-size: 19px;
+}
+
+/* -----------------
+HCI Bio - Had to do this for a class
 ----------------- */
 
 #bio-container {
     max-width: 1000px;
     padding: 0px 25px;
     margin: 0px auto;
-    /*border: 1px solid black;*/
     top: 6%;
     position: relative;
 }
