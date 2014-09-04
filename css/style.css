@@ -33,7 +33,7 @@ body {
     font-size: 25px;
 }
 
-.container-home p {
+.container-home .home-body  p{
     font-weight: 300;
     font-size: 19px;
     text-align: center;
@@ -43,11 +43,11 @@ body {
     margin: 40px 0px 80px 0px;
 }
 
-.container-home p a {
+.container-home .home-body p a {
     font-weight: 700;
 }
 
-.container-home p a:hover,
+.container-home .home-body p a:hover,
 #nav a:hover {
     text-decoration: underline;
     color: #006aab;
