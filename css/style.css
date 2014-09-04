@@ -17,9 +17,13 @@ body {
 .container-home h1 {
     font-weight: 700;
     font-family: "Bitter";
-    font-size: 60px;
+    font-size: 70px;
     text-align: center;
     margin-bottom: 0px;
+}
+
+.container-home #name {
+    color: #006aab;
 }
 
 .container-home #email {
@@ -30,22 +34,61 @@ body {
     font-weight: 300;
 }
 
-.container-home .home-body p{
-    font-weight: 300;
-    font-size: 19px;
-    text-align: center;
-    padding: 25px 15px;
+.home-body {
+    padding: 25px 27.5px;
     border-top: 2px solid #00466b;
     border-bottom: 2px solid #00466b;
     margin: 35px 0px 70px 0px;
 }
 
-.container-home .home-body p a {
+.home-body nav {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.home-body .nav-container {
+    text-align: center;
+}
+
+.home-body nav a {
+    color: #333;
+    font-style: italic;
+    font-family: "Bitter";
+    font-size: 20px;
+    border: 1px dotted #333;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin: 0px 10px;
+    transition: .08s;
+    -webkit-transition: .08s;
+    -moz-transition: .08s;
+    -ms-transition: .08s;
+    -o-transition: .08s;
+}
+
+.home-body nav a:hover {
+    background-color: #006aab;
+    border: 1px dotted #006aab;
+    color: white;
+    transition: .08s;
+    -webkit-transition: .08s;
+    -moz-transition: .08s;
+    -ms-transition: .08s;
+    -o-transition: .08s;
+}
+
+.home-body p {
+    font-weight: 300;
+    font-size: 19px;
+    text-align: center;
+    margin: 0px;
+}
+
+.home-body p a {
     font-weight: 700;
 }
 
-.container-home .home-body p a:hover,
-#nav a:hover {
+.home-body p a:hover {
     text-decoration: underline;
     color: #006aab;
 }
