@@ -1,4 +1,4 @@
 #!env/bin/python
-from app import manager
+from app import app
 
-manager.run()
+app.run()

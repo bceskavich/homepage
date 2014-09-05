@@ -19,7 +19,7 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{url_for('static', filename='img/favicon.ico')}}" type="image/x-icon">
-    <link rel="icon" href="{{url_for('static', filename='img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{url_for('static', filename='img/favicon.ico')}}" type="image/x-icon">
 
     <!-- JS -->
     <script src="{{url_for('static', filename='js/vendor/modernizr.js')}}"></script>
@@ -35,8 +35,7 @@
       {% endif %}
     {% endwith %}
 
-    {% block content %}
-    {% endblock %}
+    {% block content %}{% endblock %}
 
     <script src="{{url_for('static', filename='js/vendor/jquery.js')}}"></script>
     <script src="{{url_for('static', filename='js/foundation.min.js')}}"></script>
