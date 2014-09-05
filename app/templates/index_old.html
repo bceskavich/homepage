@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% block content %}
+<header id="top">
+  <nav>
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li id="initials"><a href="index.html">- <span>BC</span> -</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="intro">
+    <h1>Hey, it's <span id="name">Billy!</span></h1>
+
+    <p>billy <strong>[at]</strong> ceskavich.com<br />
+    <br />
+    Summer intern at <a target="_blank" href="https://about.twitter.com/careers">Twitter</a>. CEO and co-founder of <a href="http://www.compasapp.com/" target="_blank">Compas</a>. Engagement Fellow at the Syracuse University <a target="_blank" href="http://ischool.syr.edu/">School of Information Studies</a>. Obsessive film junkie and newly bred coffee fanatic.</p>
+
+    <div class="list-container">
+      <ul>
+        <li><a class="ion-social-github" href="https://github.com/bceskavich/"></a></li>
+        <li><a class="ion-social-linkedin" href="https://www.linkedin.com/in/ceskavich"></a></li>
+        <li><a class="ion-social-twitter" href="https://twitter.com/ceskavich"></a></li>
+        <li><a class="ion-camera" href="https://instagram.com/ceskavich"></a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<section class="row" id="about">
+  <div class="title"><h1>About</h1></div>
+
+  <div class="large-6 med-6 small-12 columns">
+    <p>Hey, I go by Billy. I’m a <strong>web developer,</strong> <strong>product manager</strong>, and <strong>graduate student</strong> in Syracuse University’s Information Management program. Right now I split my time between a summer internship at Twitter, my event services startup Compas, and an array of personal projects.</p>
+
+    <p>Elsewhere, I’m an enthusiast for good film and strong coffee. You can follow the trials and tribulations of my daily life here, on social media, or reach out to me personally.</p>
+  </div>
+
+  <div class="large-6 med-6 small-12 columns">
+    <div>
+      <h4>Currently</h4>
+      <ul>
+        <li>
+          <div><a href="https://about.twitter.com/careers" target="_blank">Twitter, Inc.</a></div>
+          <div>Program Manager Intern</div>
+        </li>
+        <li>
+          <div><a href="http://www.compasapp.com/" target="_blank">Compas Solutions, LLC</a></div>
+          <div>CEO &amp; Co-Founder</div>
+        </li>
+        <li>
+          <div><a href="https://ischool.syr.edu/" target="_blank">SU iSchool</a></div>
+          <div>Engagement Fellow</div>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Previously</h4>
+      <ul>
+        <li>
+          <div><a href="https://www.evernote.com/" target="_blank">Evernote Corporation</a></div>
+          <div>Developer Relations Intern</div>
+        </li>
+        <li>
+          <div><a href="http://universityunion.syr.edu/" target="_blank">University Union</a></div>
+          <div>President</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="row" id="skills-container">
+  <div class="large-7 columns" id="skills">
+  </div>
+
+  <div class="large-5 columns">
+    <p>I’m well at home with HTML and CSS, as well as several important web frameworks. I’m currently loving Flask + Jinja2 for Python, which I’ve been using in a lot of my projects as of late.</p>
+
+    <p>In addition to my web development skills, through numerous personal projects and work experiences I’ve honed my project management skills.</p>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="row title"><h1>Portfolio</h1></div>
+
+  <article class="row">
+    <div class="large-7 med-8 small-12 columns">
+      <div class="port-image" style="background-image: url('img/grov-portfolio.png');">
+        <a href="#" target="_blank"><i class="ion-chevron-right"></i></a>
+      </div>
+    </div>
+
+    <div class="large-5 columns port-description">
+      <h4><a href="#" target="_blank">Grov</a></h4>
+
+      <p>A web application that renders a data visualization of Twitter networks among authenticated users. Nodes grow the more they are shared as a common follower/friend. Completed in conjunction with SU's NEXIS Lab.</p>
+
+      <p><strong>The Tech</strong> - <a href="#" target="_blank">D3.js</a>, <a href="#" target="_blank">Python</a>, <a href="#" target="_blank">Flask</a>, <a href="#" target="_blank">Twitter API</a></p>
+    </div>
+  </article>
+
+  <article class="row">
+    <div class="large-7 med-8 small-12 columns">
+      <div class="port-image" style="background-image: url('img/grov-portfolio.png');">
+        <a href="#" target="_blank"><i class="ion-chevron-right"></i></a>
+      </div>
+    </div>
+
+    <div class="large-5 columns port-description">
+      <h4><a href="#" target="_blank">Grov</a></h4>
+
+      <p>A web application that renders a data visualization of Twitter networks among authenticated users. Nodes grow the more they are shared as a common follower/friend. Completed in conjunction with SU's NEXIS Lab.</p>
+
+      <p><strong>The Tech</strong> - <a href="#" target="_blank">D3.js</a>, <a href="#" target="_blank">Python</a>, <a href="#" target="_blank">Flask</a>, <a href="#" target="_blank">Twitter API</a></p>
+    </div>
+  </article>
+</section>
+{% endblock %}
