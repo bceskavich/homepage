@@ -256,7 +256,7 @@ Portfolio Page
 }
 
 /* -----------------
-HCI Bio - Had to do this for a class
+About & HCI Bio
 ----------------- */
 
 #bio-container {
@@ -303,7 +303,6 @@ HCI Bio - Had to do this for a class
 
 .bio img {
     border-radius: 20px;
-    padding-top: 15px;
 }
 
 .deets .accordion h4 {
@@ -368,4 +367,22 @@ HCI Bio - Had to do this for a class
     -moz-transition: .08s;
     -ms-transition: .08s;
     -o-transition: .08s;
+}
+
+@media only screen and (max-width: 499px) {
+    #bio-container p {
+        font-size: 15px;
+    }
+
+    #bio-container h1 {
+        font-size: 25px;
+    }
+
+    #bio-container h3 {
+        font-size: 20px;
+    }
+
+    #bio-container .bio {
+        padding: 25px 0px;
+    }
 }
