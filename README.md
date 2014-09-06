@@ -1,5 +1,10 @@
 # Billy's Personal Homepage
 
-Found at [here](http://www.ceskavich/). Currently hosting the "landing" branch.
+_Live at [www.ceskavich.com](http://www.ceskavich.com/)._
 
-Built using Python + Flask + (a little) D3.
+Built using Python & Flask. Currently includes mostly static files and portfolio content.
+
+### Next Steps
+
+* Admin panel for seamless content updates
+* Blog
