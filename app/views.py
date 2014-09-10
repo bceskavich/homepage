@@ -16,5 +16,6 @@ def work():
   return render_template("work.html")
 
 @app.route('/bio.html')
+@app.route('/bio')
 def bio():
   return render_template("bio.html")
