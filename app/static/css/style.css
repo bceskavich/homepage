@@ -198,7 +198,18 @@ Portfolio Page
     margin-bottom: 75px;
 }
 
+#work i {
+    color: #006aab;
+}
+
 #work h1 {
+    font-family: "Bitter";
+    font-style: italic;
+    text-align: center;
+    padding: 30px 0px 60px 0px;
+}
+
+#work h2 {
     font-family: "Bitter";
     border-bottom: 2px solid #00466b;
 }
@@ -245,7 +256,7 @@ Portfolio Page
         font-size: 15px;
     }
 
-    #work article:first-child {
+    #work h1:first-child {
         margin-top: 10px;
     }
 
