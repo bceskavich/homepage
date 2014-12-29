@@ -1,29 +1,67 @@
-from flask import url_for
-from app import app, db
+from pymongo import MongoClient
 
-class Admin(db.Model):
-    id = db.Column(db.Integer, primary_key = True)
-    username = db.Column(db.String(64), unique = True)
-    password = db.Column(db.String(64))
+class DB(object):
 
-    def is_authenticated(self):
-        return True
+    def __init__(self, db_name, collection):
+        """
+        Initiates w/ connection to Mongo & specified DB/Collection
+        """
+        self.connection = MongoClient()
 
-    def is_active(self):
-        return True
+        self.db = self.connection[db_name]
+        self.coll = self.db[collection]
 
-    def is_anonymous(self):
-        return False
+    def insert(self, doc):
+        """
+        Inserts provided document into established DB connection
+        """
+        try:
+            self.coll.insert(doc)
+            status = 1
+        except:
+            status = 0
 
-    def get_id(self):
-        return unicode(self.id)
+        resp = {'status': status}
 
-    def __repr__(self):
-        return '<User %r>' % (self.username)
+        return resp
 
-class Post(db.Model):
-    id = db.Column(db.Integer, primary_key = True)
-    title = db.Column(db.String(256), index = True)
-    description = db.Column(db.Text)
-    img = db.Column(db.String(256))
+    def get_work_list(self):
+        """
+        Returns list of work items for the portfolio (work.html) page
+        """
+        items = self.coll.find()
+
+        if items:
+            status = 1
+            work_list = [item for item in items]
+        else:
+            status = 0
+            work_list = None
+
+        resp = {
+            'status': status,
+            'data'  : work_list
+        }
+
+        return resp
+
+    def get_bio(self):
+        """
+        Returns info for homepage
+        """
+        bio = self.coll.find_one({'module': 'bio'})
+
+        if bio:
+            status = 1
+            bio_text = bio['text']
+        else:
+            status = 0
+            bio = None
+
+        resp = {
+            'status': status,
+            'bio'   : bio_text
+        }
+
+        return resp
 

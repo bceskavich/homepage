@@ -1,7 +1,8 @@
 from flask import render_template, flash, redirect, session, url_for, request, g
-from flask.ext.login import login_user, logout_user, current_user, login_required
-from app import app, db, login_manager
+from app import app
 from flask.ext.markdown import Markdown
+from models import DB
+
 
 @app.route('/')
 @app.route('/index')
@@ -12,13 +13,16 @@ def index():
 
 @app.route('/about')
 def about():
-    return render_template("about.html")
+    db = DB('main', 'bio')
+    bio = db.get_bio()
+    if bio['status']:
+        bio_text = bio['bio']
+    return render_template("about.html", bio=bio_text)
 
 @app.route('/work')
 def work():
-    return render_template("work.html")
-
-@app.route('/bio.html')
-@app.route('/bio')
-def bio():
-    return render_template("bio.html")
+    db = DB('main', 'work')
+    resp = db.get_work_list()
+    if resp['status']:
+        work_list = [item for item in resp['data']]
+    return render_template("work.html", work_list=work_list)

@@ -3,7 +3,26 @@
 <a href="{{url_for('index')}}" class="ion-arrow-left-c" id="back"></a>
 
 <div class="container" id="work">
-  <h1><i class="ion-android-developer"></i>&nbsp;&nbsp;Development &amp; Design&nbsp;&nbsp;<i class="ion-android-developer"></i></h1>
+
+<h1>My Work</h1>
+
+  {% for item in work_list %}
+  <article>
+    <h2>{{item['title']}}</h2>
+    <a href="{{item['main_link']}}"><img src="{{item['image_name']}}" /></a>
+    <p>{{item['description']}}</p>
+
+    <br />
+
+    <p>
+    Tags -
+    {% for tag in item['tags'] %}
+    <a href="{{tag['tag_url']}}" target="_blank">{{tag['tag_name']}}</a>
+    {% endfor %}
+  </article>
+  {% endfor %}
+
+  <!--<h1><i class="ion-android-developer"></i>&nbsp;&nbsp;Development &amp; Design&nbsp;&nbsp;<i class="ion-android-developer"></i></h1>
   <article>
     <h2>Hack Upstate with AT&amp;T</h2>
     <img src="{{url_for('static', filename='img/hu.jpg')}}" />
@@ -51,6 +70,6 @@
     <h2>Evernote</h2>
     <img src="{{url_for('static', filename='img/devcup.png')}}" />
     <p>During summer 2013 I was a developer relations intern at <a href="https://www.evernote.com/" target="_blank">Evernote</a>. I juggled a lot of responsibilities, including web content updates, platform communications, and events. My big contribution was coordinating the <a href="https://www.hackerleague.org/hackathons/evernote-devcup-2013/" target="_blank">Evernote Devcup</a> (now the <a href="https://platformawards.evernote.com/" target="_blank">Platform Awards</a>), an annual competition among products that work with the Evernote API. This was my first experience in Silicon Valley—life changing to say the least!</p>
-  </article>
+  </article>-->
 </div>
 {% endblock %}
