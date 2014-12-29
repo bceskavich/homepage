@@ -6,6 +6,7 @@ from flaskext.markdown import Markdown
 from config import basedir
 
 app = Flask(__name__)
+app.debug=True
 app.config.from_object('config')
 
 Markdown(app)

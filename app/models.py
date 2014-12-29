@@ -34,6 +34,7 @@ class DB(object):
         if items:
             status = 1
             work_list = [item for item in items]
+            work_list = sorted(work_list, key=lambda item: item['inserted'])
         else:
             status = 0
             work_list = None

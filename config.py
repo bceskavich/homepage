@@ -1,4 +1,4 @@
-import os
+import os, time
 from app.models import DB
 
 CSRF_ENABLED = True
@@ -9,6 +9,7 @@ def insert_work():
     description = raw_input('Work item description: ')
     image_name = raw_input('Main image name: ')
     main_link = raw_input('Main link URL: ')
+    priority = raw_input('Priority: ')
 
     tags = []
     flag = 1
@@ -23,6 +24,7 @@ def insert_work():
             flag = 0
 
     doc = {
+        'priority'      : priority,
         'title'         : title,
         'description'   : description,
         'image_name'    : 'http://www.ceskavich.com/static/img/' + image_name,
