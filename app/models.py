@@ -21,10 +21,9 @@ class Admin(db.Model):
     def __repr__(self):
         return '<User %r>' % (self.username)
 
-class Work(db.Model):
+class Post(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     title = db.Column(db.String(256), index = True)
     description = db.Column(db.Text)
-    url = db.Column(db.String(256))
-    imagename = db.Column(db.String(256))
+    img = db.Column(db.String(256))
 
