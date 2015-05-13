@@ -15,8 +15,11 @@ def index():
 def about():
     db = DB('main', 'bio')
     bio = db.get_bio()
+
+    bio_text = 'None'
     if bio['status']:
         bio_text = bio['bio']
+
     return render_template("about.html", bio=bio_text)
 
 @app.route('/work')
